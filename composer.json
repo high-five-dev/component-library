@@ -1,0 +1,36 @@
+{
+    "name": "high-five/component-library",
+    "description": "Component library module for Craft CMS websites",
+    "type": "craft-module",
+    "version": "0.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "High Five",
+            "email": "hello@high-five.dev",
+            "homepage": "https://www.high-five.dev"
+        },
+        {
+            "name": "Harm Putman",
+            "email": "harm@high-five.dev",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@high-five.dev"
+    },
+    "require": {
+        "craftcms/cms": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HighFive\\ComponentLibrary\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
