@@ -4,6 +4,8 @@
     "type": "craft-module",
     "version": "0.0.0",
     "license": "GPL-3.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "High Five",
@@ -22,15 +24,22 @@
     "require": {
         "craftcms/cms": "^4.0.0"
     },
+    "require-dev": {
+        "craftcms/phpstan": "dev-main"
+    },
     "autoload": {
         "psr-4": {
             "HighFive\\ComponentLibrary\\": "src/"
         }
     },
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "craftcms/plugin-installer": true,
             "yiisoft/yii2-composer": true
         }
+    },
+    "scripts": {
+        "phpstan": "phpstan --memory-limit=1G"
     }
 }
